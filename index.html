@@ -67,7 +67,7 @@
                         <h1 class="h3 mb-4 fw-normal" style="color: #2a4f75;">Delete Account?</h1>
 
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="username" placeholder="Enter Username" autofocus
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email" autofocus
                                    required>
                             <input type="password" class="form-control mt-4" id="password" placeholder="Enter Password"
                                    autofocus
@@ -170,7 +170,7 @@
         $('#confirmDeleteBtn').on('click', function () {
 
             const formData = {
-                userName: $('#username').val(),
+                email: $('#email').val(),
                 password: $('#password').val(),
             }
 
